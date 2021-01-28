@@ -1,18 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Заголовок формы"
+            android:textAlignment="center"
+            android:textColor="#f33"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20pt"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:layout_marginBottom="10pt"
+            android:inputType="textPersonName"
+            android:hint="Login"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:layout_marginBottom="10pt"
+            android:inputType="textPassword"
+            android:hint="Password"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:layout_marginBottom="10pt"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:layout_marginBottom="10pt"
+            android:inputType="phone"
+            android:hint="Phone"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:layout_marginBottom="10pt"
+            android:inputType="number"
+            android:hint="Number"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:layout_marginBottom="10pt"
+            android:inputType="text"
+            android:hint="Text"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/checkbox_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохлашаюсь с условиями лицензионного соглашения" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switch_1"
+            android:layout_width="20pt"
+            android:layout_height="30pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Какой то переключатель" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ToggleButton"
+            android:textOff="ничего не присылать"
+            android:textOn="Присылать всякую дребедень" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20pt"
+            android:text="Отправить" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сбросить" />
+
+    </LinearLayout>
+
+</android.widget.LinearLayout>
