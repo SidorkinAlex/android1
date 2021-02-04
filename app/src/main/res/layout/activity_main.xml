@@ -44,14 +44,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/b1"
+                android:id="@+id/buttonNumber1"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:text="@string/b1"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/b2"
+                android:id="@+id/buttonNumber2"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="5dp"
@@ -60,7 +60,7 @@
                 tools:ignore="SpUsage" />
 
             <Button
-                android:id="@+id/b3"
+                android:id="@+id/buttonNumber3"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="5dp"
@@ -85,14 +85,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/b4"
+                android:id="@+id/buttonNumber4"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:text="@string/b4"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/b5"
+                android:id="@+id/buttonNumber5"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="5dp"
@@ -100,7 +100,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/b6"
+                android:id="@+id/buttonNumber6"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="5dp"
@@ -125,14 +125,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/b7"
+                android:id="@+id/buttonNumber7"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:text="@string/b7"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/b8"
+                android:id="@+id/buttonNumber8"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="5dp"
@@ -140,7 +140,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/b9"
+                android:id="@+id/buttonNumber9"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="5dp"
@@ -172,7 +172,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/b10"
+                android:id="@+id/buttonNumber0"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="5dp"
