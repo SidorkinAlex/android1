@@ -1,5 +1,6 @@
 package com.example.android1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Configuration;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    private final static String KEY_CALCULATOR = "key_calculator";
     private TextView result;
     private Calculator calculator;
     //private Keyboard keyboard;
@@ -61,5 +63,24 @@ public class MainActivity extends AppCompatActivity {
     }
     private boolean isPortraitOrientation(){
         return getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
+    }
+
+    // Сохранение данных
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle instanceState) {
+        super.onSaveInstanceState(instanceState);
+        instanceState.putSerializable(KEY_CALCULATOR, calculator);
+    }
+
+    // Восстановление данных
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
+        super.onRestoreInstanceState(instanceState);
+        calculator = (Calculator) instanceState.getSerializable(KEY_CALCULATOR);
+        setTextCalculator();
+    }
+
+    private void setTextCalculator() {
+        result.setText(calculator.calculatorText);
     }
 }
