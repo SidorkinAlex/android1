@@ -13,8 +13,8 @@ public class Calculator implements Serializable {
     }
 
     public void setValue(Button button) {
-    // получаем значение кнопки, которую нажали
-        String buttonText=button.getText().toString();
+        // получаем значение кнопки, которую нажали
+        String buttonText = button.getText().toString();
         calculatorText = calculatorText + buttonText;
         // присвоение значения счетчику
 

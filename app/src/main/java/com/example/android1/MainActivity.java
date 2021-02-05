@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(isPortraitOrientation()) {
+        if (isPortraitOrientation()) {
             setContentView(R.layout.activity_main);
         } else {
             setContentView(R.layout.activity_main_landscape);
@@ -38,18 +38,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initButtons() {
-        buttons=new ArrayList<>();
-            // создаем массив id для кнопок, что бы вызвать класс обработчик
-        int[] buttonIds = {R.id.buttonNumber1,R.id.buttonNumber2, R.id.buttonNumber3, R.id.buttonNumber4,
+        buttons = new ArrayList<>();
+        // создаем массив id для кнопок, что бы вызвать класс обработчик
+        int[] buttonIds = {R.id.buttonNumber1, R.id.buttonNumber2, R.id.buttonNumber3, R.id.buttonNumber4,
                 R.id.buttonNumber5, R.id.buttonNumber6, R.id.buttonNumber7, R.id.buttonNumber8,
                 R.id.buttonNumber9, R.id.buttonNumber0, R.id.bDrop, R.id.bPlus,
                 R.id.bMinus, R.id.bEqually, R.id.bMultiply, R.id.bSplit,
                 R.id.bSqrt, R.id.bQrt};
 
-        for(int i=0;i<buttonIds.length-1;i++)
-        {
+        for (int i = 0; i < buttonIds.length - 1; i++) {
             Button b = (Button) findViewById(buttonIds[i]);
-            b.setOnClickListener( new View.OnClickListener() {
+            b.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     calculator.setValue(b);
@@ -61,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
             buttons.add(b);
         }
     }
-    private boolean isPortraitOrientation(){
+
+    private boolean isPortraitOrientation() {
         return getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
     }
 
