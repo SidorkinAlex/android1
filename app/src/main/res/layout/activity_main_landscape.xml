@@ -84,6 +84,13 @@
                         android:layout_marginStart="5dp"
                         android:text="@string/bDrop"
                         android:textSize="18sp" />
+                    <Button
+                        android:id="@+id/bMultiply"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/bMultiply"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -123,6 +130,13 @@
                         android:layout_height="70dp"
                         android:layout_marginStart="5dp"
                         android:text="@string/bPlus"
+                        android:textSize="18sp" />
+                    <Button
+                        android:id="@+id/bSplit"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/bSplit"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -164,6 +178,14 @@
                         android:layout_marginStart="5dp"
                         android:text="@string/bMinus"
                         android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/bSqrt"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/bSqrt"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -197,39 +219,6 @@
                         android:text="@string/bEqually"
                         android:textSize="18sp" />
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/buttonPanelRow5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/bMultiply"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:text="@string/bMultiply"
-                        android:textSize="18sp" />
-
-                    <Button
-                        android:id="@+id/bSplit"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="5dp"
-                        android:text="@string/bSplit"
-                        android:textSize="18sp" />
-
-                    <Button
-                        android:id="@+id/bSqrt"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="5dp"
-                        android:text="@string/bSqrt"
-                        android:textSize="18sp" />
-
                     <Button
                         android:id="@+id/bQrt"
                         android:layout_width="70dp"
@@ -237,7 +226,9 @@
                         android:layout_marginStart="5dp"
                         android:text="@string/bQrt"
                         android:textSize="18sp" />
+
                 </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
 
