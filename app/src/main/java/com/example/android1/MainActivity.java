@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.bMinus, R.id.bEqually, R.id.bMultiply, R.id.bSplit,
                 R.id.bSqrt, R.id.bQrt};
 
-        for (int i = 0; i < buttonIds.length - 1; i++) {
+        for (int i = 0; i < buttonIds.length; i++) {
             Button b = (Button) findViewById(buttonIds[i]);
             b.setOnClickListener(new View.OnClickListener() {
                 @Override
