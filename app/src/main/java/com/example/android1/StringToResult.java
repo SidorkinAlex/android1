@@ -8,7 +8,7 @@ public class StringToResult {
 
     public boolean isOperation(char c)
     {
-        return c == '+' || c == '-' || c == '/' || c == '%' || c == '*';
+        return c == '+' || c == '-' || c == '÷' || c == '%' || c == 'x';
     }
 
     public boolean interval(char c)
@@ -21,8 +21,8 @@ public class StringToResult {
             case '+':
             case '-':
                 return 1;
-            case '*':
-            case '/':
+            case 'x':
+            case '÷':
             case '%':
                 return 2;
             default:
@@ -40,10 +40,10 @@ public class StringToResult {
             case '-':
                 cislo.add(l - r);
                 break;
-            case '*':
+            case 'x':
                 cislo.add(l * r);
                 break;
-            case '/':
+            case '÷':
                 cislo.add(l / r);
                 break;
             case '%':
