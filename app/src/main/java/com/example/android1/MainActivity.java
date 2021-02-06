@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     private final static String KEY_CALCULATOR = "key_calculator";
     private TextView result;
     private Calculator calculator;
-    //private Keyboard keyboard;
     private ArrayList<Button> buttons;
 
 
@@ -52,9 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     calculator.setValue(b);
-                    System.out.println("Текст из майн активити");
-                    System.out.println(calculator.calculatorText);
-                    result.setText(calculator.calculatorText);
+                    result.setText(calculator.getCalculationView());
                 }
             });
             buttons.add(b);
@@ -81,6 +78,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setTextCalculator() {
-        result.setText(calculator.calculatorText);
+        result.setText(calculator.getCalculationView());
     }
 }
