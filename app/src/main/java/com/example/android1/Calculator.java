@@ -16,7 +16,7 @@ public class Calculator implements Serializable {
 
     public void setValue(String buttonText) {
         // получаем значение кнопки, которую нажали
-        if(buttonText.equals("=")){
+        if (buttonText.equals("=")) {
             calculateString();
         } else {
             currentCalculation = currentCalculation + buttonText;
@@ -34,7 +34,8 @@ public class Calculator implements Serializable {
         // обнуляем текушую строку
         currentCalculation = "";
     }
-    public String getCalculationView(){
+
+    public String getCalculationView() {
         return calculatorTextLog + "\n" + currentCalculation;
     }
 }
