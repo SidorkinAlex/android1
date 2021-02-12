@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
             b.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    calculator.setValue(b);
+                    String buttonValue = b.getText().toString();
+                    calculator.setValue(buttonValue);
                     result.setText(calculator.getCalculationView());
                 }
             });

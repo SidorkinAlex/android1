@@ -14,20 +14,15 @@ public class Calculator implements Serializable {
         this.calculatorTextLog = "";
     }
 
-    public void setValue(Button button) {
+    public void setValue(String buttonText) {
         // получаем значение кнопки, которую нажали
-        String buttonText = button.getText().toString();
-        logicButton(buttonText);
-
-    }
-
-    private void logicButton(String buttonText) {
         if(buttonText.equals("=")){
             calculateString();
         } else {
             currentCalculation = currentCalculation + buttonText;
         }
     }
+
 
     private void calculateString() {
         // расчитываеем результат
