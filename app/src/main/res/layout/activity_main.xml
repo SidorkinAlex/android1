@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+
     android:background="@drawable/background_bg"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -11,145 +12,223 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
 
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:id="@+id/appName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/app_name"
             android:textAlignment="center"
-            android:textColor="#fff"
-            android:textSize="26sp" />
+            android:textSize="26sp"
+            android:textColor="#fff"/>
 
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:id="@+id/calculator"
-            style="@style/TextViewMain" />
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_border" />
 
         <LinearLayout
             android:id="@+id/buttonPanelRow1"
-            style="@style/LinerRow">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber1"
-                style="@style/MyButton"
-                android:text="@string/b1" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="@string/b1"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber2"
-                style="@style/MyButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
                 android:text="@string/b2"
+                android:textSize="18sp"
                 tools:ignore="SpUsage" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber3"
-                style="@style/MyButton"
-                android:text="@string/b3" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/b3"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/bDrop"
-                style="@style/MyButton"
-                android:text="@string/bDrop" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/bDrop"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/buttonPanelRow2"
-            style="@style/LinerRow">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber4"
-                style="@style/MyButton"
-                android:text="@string/b4" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="@string/b4"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber5"
-                style="@style/MyButton"
-                android:text="@string/b5" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/b5"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber6"
-                style="@style/MyButton"
-                android:text="@string/b6" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/b6"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/bPlus"
-                style="@style/MyButton"
-                android:text="@string/bPlus" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/bPlus"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/buttonPanelRow3"
-            style="@style/LinerRow">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber7"
-                style="@style/MyButton"
-                android:text="@string/b7" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="@string/b7"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber8"
-                style="@style/MyButton"
-                android:text="@string/b8" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/b8"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber9"
-                style="@style/MyButton"
-                android:text="@string/b9" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/b9"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/bMinus"
-                style="@style/MyButton"
-                android:text="@string/bMinus" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/bMinus"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/buttonPanelRow4"
-            style="@style/LinerRow">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/bDot"
-                style="@style/MyButton"
-                android:text="@string/bDot" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="@string/bDot"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/buttonNumber0"
-                style="@style/MyButton"
-                android:text="@string/b10" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/b10"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/bEqually"
-                style="@style/MyButton"
                 android:layout_width="145dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="5dp"
-                android:text="@string/bEqually" />
+                android:text="@string/bEqually"
+                android:textSize="18sp" />
+
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/buttonPanelRow5"
-            style="@style/LinerRow">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/bMultiply"
-                style="@style/MyButton"
-                android:text="@string/bMultiply" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="@string/bMultiply"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/bSplit"
-                style="@style/MyButton"
-                android:text="@string/bSplit" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/bSplit"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/bSqrt"
-                style="@style/MyButton"
-                android:text="@string/bSqrt" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/bSqrt"
+                android:textSize="18sp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/bQrt"
-                style="@style/MyButton"
-                android:text="@string/bQrt" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/bQrt"
+                android:textSize="18sp" />
         </LinearLayout>
+
     </LinearLayout>
+
 </LinearLayout>
