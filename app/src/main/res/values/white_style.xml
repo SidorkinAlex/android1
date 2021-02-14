@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="MyButton">
+    <style name="WhiteMyButton">
         <item name="android:textSize">18sp</item>
         <item name="android:layout_width">70dp</item>
         <item name="android:layout_height">70dp</item>
         <item name="android:layout_marginStart">5dp</item>
     </style>
 
-    <style name="LinerRow">
+    <style name="WhiteLinerRow">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">10dp</item>
@@ -16,26 +16,28 @@
         <item name="android:orientation">horizontal</item>
     </style>
 
-    <style name="TextViewMain">
+    <style name="WhiteTextViewMain">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">180dp</item>
         <item name="android:layout_marginTop">20dp</item>
-        <item name="android:background">@drawable/my_border</item>
+        <item name="android:background">@drawable/my_white_border</item>
         <item name="android:padding">7dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
     </style>
-    <style name="settingsButton">
+    <style name="WhitesettingsButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/settings</item>
-        <item name="android:textColor">#fff</item>
+        <item name="android:textColor">#000</item>
         <item name="android:textSize">26sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginStart">40dp</item>
     </style>
-    <style name="MainLiner">
-        <item name="android:background">@drawable/background_bg</item>
+    <style name="WhiteMainLiner">
+        <item name="android:background">@drawable/white_bg</item>
     </style>
-    <style name="SettingsTitle">
+    <style name="WhiteSettingsTitle">
         <item name="android:text">@string/settings_Title</item>
         <item name="android:layout_marginTop">20dp</item>
     </style>

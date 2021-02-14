@@ -19,4 +19,5 @@
     <string name="bDrop">C</string>
     <string name="bSqrt">√</string>
     <string name="bQrt">X²</string>
+    <string name="settings">&#9881;</string>
 </resources>

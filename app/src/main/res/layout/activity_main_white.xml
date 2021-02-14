@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    style="@style/MainLiner"
+    style="@style/WhiteMainLiner"
     android:orientation="vertical">
 
     <LinearLayout
@@ -14,117 +14,117 @@
         android:gravity="center"
         android:orientation="vertical">
 <LinearLayout
-    style="@style/LinerRow">
+    style="@style/WhiteLinerRow">
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/appName"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/app_name"
             android:textAlignment="center"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="26sp" />
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/settings"
-            style="@style/settingsButton"/>
+            style="@style/WhitesettingsButton"/>
 </LinearLayout>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/calculator"
-            style="@style/TextViewMain" />
+            style="@style/WhiteTextViewMain" />
 
         <LinearLayout
             android:id="@+id/buttonPanelRow1"
-            style="@style/LinerRow">
+            style="@style/WhiteLinerRow">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber1"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b1" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber2"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b2"
                 tools:ignore="SpUsage" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber3"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b3" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bDrop"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/bDrop" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/buttonPanelRow2"
-            style="@style/LinerRow">
+            style="@style/WhiteLinerRow">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber4"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b4" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber5"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b5" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber6"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b6" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bPlus"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/bPlus" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/buttonPanelRow3"
-            style="@style/LinerRow">
+            style="@style/WhiteLinerRow">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber7"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b7" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber8"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b8" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber9"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b9" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bMinus"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/bMinus" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/buttonPanelRow4"
-            style="@style/LinerRow">
+            style="@style/WhiteLinerRow">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bDot"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/bDot" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNumber0"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/b10" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bEqually"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:layout_width="145dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="5dp"
@@ -133,26 +133,26 @@
 
         <LinearLayout
             android:id="@+id/buttonPanelRow5"
-            style="@style/LinerRow">
+            style="@style/WhiteLinerRow">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bMultiply"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/bMultiply" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bSplit"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/bSplit" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bSqrt"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/bSqrt" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bQrt"
-                style="@style/MyButton"
+                style="@style/WhiteMyButton"
                 android:text="@string/bQrt" />
         </LinearLayout>
     </LinearLayout>
